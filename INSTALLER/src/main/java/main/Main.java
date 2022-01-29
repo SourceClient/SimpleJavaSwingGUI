@@ -11,7 +11,7 @@ public class Main extends JFrame {
         new Main().setVisible(true);
     }
 
-    private Main() {
+    public Main() {
         super("Installer");
         setSize(400,400); // 1024, 768, 800 x 600 modern res'
         setResizable(false);
