@@ -24,6 +24,7 @@ public class Main implements ActionListener {
         label = new JLabel("Username:");
         label.setBounds(10,20,80,25); // 10 = x, 20 = y, 80 = width, 25 = height.
         panel.add(label);
+
         // username text field settings
         userTextField = new JTextField(20);
         userTextField.setBounds(100,20,165,25);
@@ -51,8 +52,7 @@ public class Main implements ActionListener {
         success.setBounds(10,110,300,25);
         panel.add(success);
 
-
-
+        // makes the pannel show or not. **VERY IMPORTANT**
         frame.setVisible(true);
 
     }
@@ -71,7 +71,5 @@ public class Main implements ActionListener {
         if(user.equals("TwoOneTwo") && password.equals("123")){
             success.setText("Login Works!");
         }
-
-
     }
 }
