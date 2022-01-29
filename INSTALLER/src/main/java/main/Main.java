@@ -54,11 +54,6 @@ public class Main implements ActionListener {
         success.setBounds(10,110,300,25);
         panel.add(success);
 
-        // sets the text proving the input is wrong (you can change the dimensions from the .setBounds(x,y,w,h)
-        incorrect = new JLabel("");
-        incorrect.setBounds(10,110,300,25);
-        panel.add(incorrect);
-
         // DO NOT GET RID OF AS THIS TELLS INTELLIJ WHETHER TO SHOW THE PANEL OR NOT!!!!!
         frame.setVisible(true);
 
@@ -77,8 +72,6 @@ public class Main implements ActionListener {
         System.out.println(user + ", " + password);
         if(user.equals("TwoOneTwo") && password.equals("123")){
             success.setText("Login Works!"); // <------ if you're using a login system this where the Correct would  be.
-        } else if(user.equals("") && password.equals("")){ // kinda broken login system this is just a wip so you can remove this or make a pr for suggestions
-            incorrect.setText(""); // <------ if you're using a login system this where the incorrect would  be.
         }
     }
-}
+    }
