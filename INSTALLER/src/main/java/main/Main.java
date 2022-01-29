@@ -17,6 +17,7 @@ public class Main extends JFrame {
         JTextField userTextField = new JTextField(20);
         userTextField.setBounds(100,20,165,25);
         panel.add(userTextField);
+
         frame.setVisible(true);
 
     }
