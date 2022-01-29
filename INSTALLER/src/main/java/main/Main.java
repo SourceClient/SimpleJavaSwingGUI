@@ -5,6 +5,9 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+        /*
+        TODO: Figure out a way to replace the image icon when you launch the icon, Make a decent register system.
+         */
 
 public class Main implements ActionListener {
     private static JTextField userTextField;
