@@ -1,2 +1,5 @@
-# InstallerForJava
-Lightweight installer written in java, made for minecraft mods, The installer uses JPanel and uses a URL to install to the specific area (Discord URL's work the best i've seen)
+# Testing Java GUI Screens
+- Did i skid anything?
+- Yea, I just used tux's installer thing but deleted the main class and then created my own class and changed the package.
+
+
