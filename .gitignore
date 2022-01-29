@@ -1,0 +1,4 @@
+# Project exclude paths
+/INSTALLER/.gradle/
+/INSTALLER/build/
+/INSTALLER/build/classes/java/main/
