@@ -62,11 +62,16 @@ public class Main implements ActionListener {
      *
      * @param e
      */
+    // Action Perform when you click login! (prints text via command line)
     @Override
     public void actionPerformed(ActionEvent e) {
         String user = userTextField.getText();
         String password = passwordText.getText();
         System.out.println(user + ", " + password);
+        if(user.equals("TwoOneTwo") && password.equals("123")){
+            success.setText("Login Works!");
+        }
+
 
     }
 }
