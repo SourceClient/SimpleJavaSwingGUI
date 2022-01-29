@@ -1,13 +1,10 @@
 package main;
 
-import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.image.BufferedImage;
-import java.io.IOException;
-import java.net.URL;
+
 
 public class Main implements ActionListener {
     private static JTextField userTextField;
@@ -17,7 +14,6 @@ public class Main implements ActionListener {
     private static JButton button;
     private static JLabel success;
     private static JLabel incorrect;
-    private static JFrame frame;
     public static void main(String[] args) {
         JFrame frame = new JFrame();
         JPanel panel = new JPanel();
@@ -63,8 +59,6 @@ public class Main implements ActionListener {
         incorrect = new JLabel("");
         incorrect.setBounds(10,110,300,25);
         panel.add(incorrect);
-
-        //Changing the JAVA logo on the top left!
 
         // makes the pannel show or not. **VERY IMPORTANT**
         frame.setVisible(true);
