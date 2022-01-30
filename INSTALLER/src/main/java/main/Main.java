@@ -29,13 +29,13 @@ public class Main extends JPanel{
     public Main() {
         window = new JFrame();
         setLayout(new BorderLayout(10, 10));
-        window.setIconImage(new ImageIcon("src/logo.png").getImage());
+        window.setIconImage(new ImageIcon("src/1200px-Internet_Explorer_10+11_logo.svg.png").getImage());
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        JPanel componentsPanel = new JPanel(new GridLayout(3, 2, 10, 10));
+        JPanel componentsPanel = new JPanel(new GridLayout(3, 2, 10, 10)); // this represents the x, y, w, h!
         window.setContentPane(this);
 
         errorViewLabel = new JLabel(" ");
-        errorViewLabel.setFont(new Font("Tahoma",Font.ITALIC, 18));
+        errorViewLabel.setFont(new Font("Tahoma",Font.BOLD, 18));
         errorViewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 
         usernameField = new JTextField();
@@ -49,7 +49,7 @@ public class Main extends JPanel{
             if(user.equals("TwoOneTwo") && password.equals("123")){
                 errorViewLabel.setText("Login Works!");
             } else {
-                errorViewLabel.setText("Login Incorrect DM Two#6969 for pword reset!");
+                errorViewLabel.setText("DM the creator for a password reset!");
             }
         });
         resetButton = new JButton("Reset");
@@ -60,7 +60,7 @@ public class Main extends JPanel{
         });
 
         addComponentsToWindow(componentsPanel,
-                new JLabel("USER NAME : "),usernameField,
+                new JLabel("USERNAME: "),usernameField,
                 new JLabel("PASSWORD"),passwordField,
                 loginButton,resetButton);
 
@@ -72,7 +72,7 @@ public class Main extends JPanel{
     }
     private void addComponentsToWindow(JPanel panel,JComponent...component) {
         for(JComponent com:component) {
-            com.setFont(new Font("Tahoma", Font.BOLD | Font.ITALIC, 20));
+            com.setFont(new Font("Tahoma", Font.BOLD, 20));
             panel.add(com);
         }
     }
