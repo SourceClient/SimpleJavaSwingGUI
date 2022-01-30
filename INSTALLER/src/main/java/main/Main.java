@@ -75,6 +75,7 @@ public class Main extends JPanel{
     }
     private void addComponentsToWindow(JPanel panel,JComponent...component) {
         for(JComponent com:component) {
+            // com.setFont(new Font("Tahoma", Font.BOLD, 20)); changes the font and size.
             com.setFont(new Font("Tahoma", Font.BOLD, 20));
             panel.add(com);
         }
