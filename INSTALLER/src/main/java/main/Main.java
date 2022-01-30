@@ -14,6 +14,9 @@ import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
 
+// Hello everyone! If you are reading this then that means you're using my simple GUI! If you have any questions please reach me on Discord. Two#6969 <3
+
+
 @SuppressWarnings("serial")
 public class Main extends JPanel{
     private JTextField usernameField;
