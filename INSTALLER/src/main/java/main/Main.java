@@ -25,13 +25,13 @@ public class Main extends JPanel{
     public static void main(String[] args) {
         new Main().window.setVisible(true);
     }
-
+    // X, Y, W, H Represent the Coordinates!
     public Main() {
         window = new JFrame();
         setLayout(new BorderLayout(10, 10));
         window.setIconImage(new ImageIcon("src/1200px-Internet_Explorer_10+11_logo.svg.png").getImage());
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        JPanel componentsPanel = new JPanel(new GridLayout(3, 2, 10, 10)); // this represents the x, y, w, h!
+        JPanel componentsPanel = new JPanel(new GridLayout(3, 2, 5, 5));
         window.setContentPane(this);
 
         errorViewLabel = new JLabel(" ");
@@ -60,7 +60,7 @@ public class Main extends JPanel{
         });
 
         addComponentsToWindow(componentsPanel,
-                new JLabel("USERNAME: "),usernameField,
+                new JLabel("USERNAME"),usernameField,
                 new JLabel("PASSWORD"),passwordField,
                 loginButton,resetButton);
 
