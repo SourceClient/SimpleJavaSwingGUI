@@ -5,5 +5,4 @@
 
 - Note:
 - This is my first time making a GUI so this is a really bad design but i did over like 40 commits as of 2022-01-29, and I really want to take a break but I got nothing to do lol
-
-
+- Might learn JavaFX
