@@ -13,8 +13,9 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JFrame;
-
-// Hello everyone! If you are reading this then that means you're using my simple GUI! If you have any questions please reach me on Discord. Two#6969 <3
+// if you know how to make it a register system then make a pull request and ill review it!
+// Hello everyone! If you are reading this then that means you're using my simple GUI!
+// If you have any questions please reach me on Discord. Two#6969 <3
 
 
 @SuppressWarnings("serial")
@@ -26,13 +27,13 @@ public class Main extends JPanel{
     public JFrame window;
 
     public static void main(String[] args) {
-        new Main().window.setVisible(true);
+        new Main().window.setVisible(true); // very important!
     }
     // X, Y, W, H Represent the Coordinates!
     public Main() {
         window = new JFrame();
         setLayout(new BorderLayout(10, 10));
-        window.setIconImage(new ImageIcon("src/1200px-Internet_Explorer_10+11_logo.svg.png").getImage());
+        window.setIconImage(new ImageIcon("src/1200px-Internet_Explorer_10+11_logo.svg.png").getImage()); // input a image file here! (can only be src)
         window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         JPanel componentsPanel = new JPanel(new GridLayout(3, 2, 5, 5));
         window.setContentPane(this);
@@ -49,22 +50,23 @@ public class Main extends JPanel{
             String user = usernameField.getText();
             String password = passwordField.getText();
             System.out.println(user + ", " + password);
-            if(user.equals("TwoOneTwo") && password.equals("123")){
+            if(user.equals("TwoOneTwo") && password.equals("123")){ // input the username/password here!
                 errorViewLabel.setText("Login Works!");
             } else {
-                errorViewLabel.setText("DM the creator for a password reset!");
+                errorViewLabel.setText("DM the creator for a password reset!"); // output if input is incorrect
             }
         });
-        resetButton = new JButton("Reset");
+        resetButton = new JButton("Reset"); // button for reset
         resetButton.addActionListener(onClick->{
-            usernameField.setText("");
-            passwordField.setText("");
+            usernameField.setText(""); // puts the username blank
+            passwordField.setText(""); // puts the password blank
             errorViewLabel.setText(" ");
         });
 
         addComponentsToWindow(componentsPanel,
-                new JLabel("USERNAME"),usernameField,
-                new JLabel("PASSWORD"),passwordField,
+                new JLabel("USERNAME"),usernameField, // usernameField set to USERNAME
+                new JLabel("PASSWORD"),passwordField, // passwordField set to PASSWORD (you can change both
+                // if change passwordField/usernameField to different char then change the chars at the top (private static usernameField etc)
                 loginButton,resetButton);
 
         add(componentsPanel, BorderLayout.CENTER);
