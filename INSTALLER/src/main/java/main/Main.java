@@ -1,7 +1,10 @@
 package main;
 
 import javax.swing.*;
-
+// if you know how to make it a register system then make a pull request and ill review it!
+// Hello everyone! If you are reading this then that means you're using my simple startup GUI!
+// All this is, is a 600 x 800 (width, height) gui with a simple input box pos at the center of it!
+// If you have any questions please reach me on Discord. Two#6969 <3
 public class Main {
     private static JTextField textField;
 
