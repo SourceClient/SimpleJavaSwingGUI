@@ -22,7 +22,7 @@ public class Main {
         textField.setBounds(200,20,165,25);
         panel.add(textField);
 
-        // makes the pannel show or not. **VERY IMPORTANT**
+        // makes the panel show or not. **VERY IMPORTANT**
         frame.setVisible(true);
 
     }
