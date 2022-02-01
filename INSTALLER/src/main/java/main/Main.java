@@ -5,6 +5,10 @@ import javax.swing.*;
 // Hello everyone! If you are reading this then that means you're using my simple startup GUI!
 // All this is, is a 600 x 800 (width, height) gui with a simple input box pos at the center of it!
 // If you have any questions please reach me on Discord. Two#6969 <3
+
+/*
+@author TwoOneTwo
+ */
 public class Main {
     private static JTextField textField;
 
@@ -13,13 +17,13 @@ public class Main {
         JPanel panel = new JPanel();
         // frame setting
         frame.setIconImage(new ImageIcon("logo.png").getImage());
-        frame.setSize(600,800);
+        frame.setSize(600, 800);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.add(panel);
         panel.setLayout(null);
 
         textField = new JTextField(20);
-        textField.setBounds(200,20,165,25);
+        textField.setBounds(200, 20, 165, 25);
         panel.add(textField);
 
         // makes the panel show or not. **VERY IMPORTANT**
