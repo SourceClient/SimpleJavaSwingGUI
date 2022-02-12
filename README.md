@@ -4,7 +4,8 @@
 
 
 - Note:
-- This is my first time making a GUI so this is a really bad design but i did over like 40 commits as of 2022-01-29, and I really want to take a break but I got nothing to do lol
+- This is my first serious project, this is my first time making a Swing GUI so there might be some issues if you try and use it. You can DM me on discord if 
+you have any problems. Two#6969
 - Focusing on JavaFX next :D
 
 # Update
